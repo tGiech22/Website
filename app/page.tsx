@@ -1,0 +1,89 @@
+import { ExperienceCard } from "@/components/ExperienceCard";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { ProjectCard } from "@/components/ProjectCard";
+import {
+  buildingProjects,
+  experience,
+  generateProjects,
+  site,
+} from "@/data/site";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+
+        <section id="experience" className="border-t border-[var(--border)] px-6 py-16">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight">Experience</h2>
+            <p className="mt-2 text-[var(--muted)]">
+              Co-op roles in regulated healthcare — shipping software, validating data systems, and
+              working with cross-functional teams.
+            </p>
+            <div className="mt-8 space-y-6">
+              {experience.map((item) => (
+                <ExperienceCard key={item.slug} item={item} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="work" className="border-t border-[var(--border)] px-6 py-16">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight">Selected work</h2>
+            <p className="mt-2 text-[var(--muted)]">
+              Full-stack products built at Generate NU, Northeastern&apos;s student product studio —
+              including two projects that became live startups.
+            </p>
+
+            <div className="mt-10">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)]">
+                Generate NU · Sep 2024 – Present
+              </h3>
+              <div className="mt-4 space-y-6">
+                {generateProjects.map((project) => (
+                  <ProjectCard key={project.slug} project={project} />
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-12">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)]">
+                Building
+              </h3>
+              <div className="mt-4 space-y-6">
+                {buildingProjects.map((project) => (
+                  <ProjectCard key={project.slug} project={project} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="border-t border-[var(--border)] px-6 py-16">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight">About</h2>
+            <div className="mt-6 space-y-4 text-[var(--muted)]">
+              {site.about.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-md border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--foreground)]"
+            >
+              Download resume
+            </a>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
