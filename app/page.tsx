@@ -72,14 +72,22 @@ export default function Home() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-md border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--foreground)]"
-            >
-              Download resume
-            </a>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--foreground)]"
+              >
+                Download resume
+              </a>
+              <a
+                href="/photography"
+                className="inline-block rounded-md border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--foreground)]"
+              >
+                Photography
+              </a>
+            </div>
           </div>
         </section>
       </main>
