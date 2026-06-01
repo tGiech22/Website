@@ -19,6 +19,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Site content lives in [`data/site.ts`](./data/site.ts). Update experience, projects, and contact info there.
 
+Photography uses [`data/photos.ts`](./data/photos.ts) with images served from object storage + CDN. See [docs/PHOTOGRAPHY.md](./docs/PHOTOGRAPHY.md).
+
 See [CHECKLIST.md](./CHECKLIST.md) for the full launch checklist.
 
 ## Stack
