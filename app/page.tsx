@@ -3,11 +3,13 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Tag } from "@/components/Tag";
 import {
   buildingProjects,
   experience,
   generateProjects,
   site,
+  skills,
 } from "@/data/site";
 
 export default function Home() {
@@ -60,6 +62,30 @@ export default function Home() {
                   <ProjectCard key={project.slug} project={project} />
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" className="border-t border-[var(--border)] px-6 py-16">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight">Tools &amp; technologies</h2>
+            <p className="mt-2 text-[var(--muted)]">
+              Languages, frameworks, and tools I&apos;ve used to ship software and data systems in
+              production.
+            </p>
+            <div className="mt-8 space-y-6">
+              {skills.map((group) => (
+                <div key={group.category}>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)]">
+                    {group.category}
+                  </h3>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <Tag key={item} label={item} />
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

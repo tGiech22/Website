@@ -129,6 +129,34 @@ export const projects: Project[] = [
   },
 ];
 
+export type SkillGroup = {
+  category: string;
+  items: string[];
+};
+
+export const skills: SkillGroup[] = [
+  {
+    category: "Languages",
+    items: ["TypeScript", "Python", "Go", "C#", "SQL", "JavaScript"],
+  },
+  {
+    category: "Frontend",
+    items: ["React", "Next.js", "React Native", "Expo", "Tailwind CSS"],
+  },
+  {
+    category: "Backend & Data",
+    items: [".NET", "Node.js", "PostgreSQL", "Prisma", "REST", "OpenAPI"],
+  },
+  {
+    category: "Data & AI",
+    items: ["NLP", "PDF parsing", "Power BI", "Data validation", "Salesforce"],
+  },
+  {
+    category: "Tooling & Practices",
+    items: ["Docker", "Git", "CI/CD", "pytest", "Testing", "Agile/SDLC"],
+  },
+];
+
 export const site = {
   name: "Tony Giech",
   role: "Software · Data · AI Engineer",
