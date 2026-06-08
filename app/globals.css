@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Drive Tailwind's `dark:` variant off the explicit data-theme attribute set
+   by the toggle (and the no-flash script), rather than the OS media query. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   --background: #fafaf9;
   --foreground: #1c1917;
@@ -10,8 +14,20 @@
   --card: #ffffff;
 }
 
+/* Explicit user choice wins. */
+:root[data-theme="dark"] {
+  --background: #0c0a09;
+  --foreground: #fafaf9;
+  --muted: #a8a29e;
+  --border: #292524;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --card: #1c1917;
+}
+
+/* No-JS / no stored preference: follow the OS setting. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --background: #0c0a09;
     --foreground: #fafaf9;
     --muted: #a8a29e;
