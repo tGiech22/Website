@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/data/site";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const nav = [
   { label: "Experience", href: "/#experience" },
@@ -33,6 +34,7 @@ export function Header() {
           >
             Photos
           </Link>
+          <ThemeToggle />
           <a
             href="/resume.pdf"
             target="_blank"
