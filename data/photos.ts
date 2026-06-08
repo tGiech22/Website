@@ -36,15 +36,15 @@ export const photos: Photo[] = [
   // },
 ];
 
-export function photosByYear(): { year: number; photos: Photo[] }[] {
-  const years = [...new Set(photos.map((p) => p.year))].sort((a, b) => b - a);
+export function photosByYear(list: Photo[] = photos): { year: number; photos: Photo[] }[] {
+  const years = [...new Set(list.map((p) => p.year))].sort((a, b) => b - a);
 
   return years.map((year) => ({
     year,
-    photos: photos.filter((p) => p.year === year),
+    photos: list.filter((p) => p.year === year),
   }));
 }
 
-export function featuredPhotos(): Photo[] {
-  return photos.filter((p) => p.featured);
+export function featuredPhotos(list: Photo[] = photos): Photo[] {
+  return list.filter((p) => p.featured);
 }
