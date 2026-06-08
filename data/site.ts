@@ -160,7 +160,8 @@ export const skills: SkillGroup[] = [
 export const site = {
   name: "Tony Giech",
   role: "Software · Data · AI Engineer",
-  education: "B.S. CS + Business · PlusOne M.S. AI @ Northeastern · Grad Apr 2026",
+  education:
+    "Northeastern · B.S. CS + Business (Apr 2026) · PlusOne M.S. AI (Dec 2027)",
   tagline:
     "I build production software and data systems in healthcare — from patient-monitoring tooling at Philips and database validation at Insulet, to full-stack products at Generate NU (two now live startups). Currently building ML tooling for financial document analysis.",
   about: [
