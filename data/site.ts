@@ -178,7 +178,7 @@ export const site = {
   tagline:
     "I build production software and data systems in healthcare — from patient-monitoring tooling at Philips and database validation at Insulet, to full-stack products at Generate NU (two now live startups). Currently building ML tooling for financial document analysis.",
   about: [
-    "I'm a Computer Science and Business graduate from Northeastern University pursuing a Master of Science in Artificial Intelligence through Northeastern's PlusOne program (expected Dec 2027). Dean's List, GPA 3.68.",
+    "I'm a Computer Science and Business graduate from Northeastern University pursuing a Master of Science in Artificial Intelligence through Northeastern's PlusOne program (expected Dec 2027). Dean's List.",
     "My co-op experience spans software engineering at Royal Philips — regulated medical device software — and data analysis/database validation at Insulet, where I worked on Salesforce migration, complaint analytics, and pre-release feature validation.",
     "Outside co-ops, I've spent two years as a software engineer at Generate NU, Northeastern's student product studio, shipping full-stack web and mobile apps across healthcare, community, and marketplace domains. Two of those products — Vetruly and Apprenta — are now live startups.",
     "I'm looking for SWE, data engineering, and AI engineering roles where I can work on systems that ship to production: reliable backends, thoughtful data pipelines, and ML tooling with clear evaluation — not notebook-only experiments.",
