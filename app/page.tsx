@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { ExperienceCard } from "@/components/ExperienceCard";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -93,10 +95,20 @@ export default function Home() {
         <section id="about" className="border-t border-[var(--border)] px-6 py-16">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-2xl font-semibold tracking-tight">About</h2>
-            <div className="mt-6 space-y-4 text-[var(--muted)]">
-              {site.about.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+            <div className="mt-6 flex flex-col gap-8 sm:flex-row">
+              <Image
+                src="/headshot.webp"
+                alt="Photo of Tony Giech"
+                width={240}
+                height={360}
+                className="h-auto w-40 shrink-0 self-start rounded-lg object-cover sm:w-56"
+                priority
+              />
+              <div className="space-y-4 text-[var(--muted)]">
+                {site.about.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
