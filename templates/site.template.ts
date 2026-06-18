@@ -118,7 +118,7 @@ export const site = {
   tagline:
     "I've built production healthcare software at Philips and Insulet, shipped full-stack products at Generate NU (two now live startups), and I'm building ML tooling for financial document analysis.",
   about: [
-    "I'm a Computer Science + MS AI student at Northeastern.",
+    "I'm an MS AI student at Northeastern.",
     "I've worked as an SDE co-op at Philips and a data/database validation co-op at Insulet.",
     "At Generate NU, I've shipped full-stack products including two that became live startups (Vetruly, Apprenta).",
     "I'm targeting SWE, data engineering, and AI engineering roles focused on production systems.",
