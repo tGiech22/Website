@@ -7,6 +7,7 @@ export type Experience = {
   summary: string;
   highlights: string[];
   tags: string[];
+  logo?: string;
 };
 
 export type Project = {
@@ -36,6 +37,7 @@ export const experience: Experience[] = [
       "Worked within established SDLC and quality processes for medical device software, balancing feature delivery with traceability and validation requirements.",
     ],
     tags: ["C#", ".NET", "Healthcare", "Testing", "Compliance"],
+    logo: "/PhilipsLogo.png",
   },
   {
     slug: "insulet",
@@ -51,6 +53,7 @@ export const experience: Experience[] = [
       "Tested and validated 10 new features and change requests before release, reducing post-deployment issues by 30%.",
     ],
     tags: ["SQL", "Data validation", "Salesforce", "Healthcare", "Power BI"],
+    logo: "/insuletLogo.png",
   },
 ];
 
