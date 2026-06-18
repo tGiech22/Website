@@ -127,6 +127,19 @@ export const projects: Project[] = [
       "Active personal project targeting AI/data engineering workflows — document ingestion, structured extraction, and analysis over real financial PDFs.",
     ],
   },
+  {
+    slug: "ai-job-skills-pipeline",
+    title: "AI/ML Job Skills Pipeline",
+    status: "building",
+    summary:
+      "A NoSQL-powered data pipeline that analyzes skill demand across ~1,000 U.S. AI and machine learning job postings. Ingests postings into MongoDB, extracts technical skills with rule-based methods, and produces visualizations of the most in-demand competencies by role, experience level, and region.",
+    tags: ["Python", "MongoDB", "pandas", "scikit-learn", "NLP"],
+    github: "https://github.com/tGiech22/DS4300-HW6",
+    highlights: [
+      "Multi-stage pipeline: CSV ingestion into MongoDB, normalization of messy real-world data, and rule-based skill extraction across seven categories (languages, ML frameworks, cloud, databases, and more).",
+      "Advanced analysis with TF-IDF term importance and PMI co-occurrence, rendered as publication-quality charts including skill heatmaps, seniority correlations, and skill co-occurrence networks.",
+    ],
+  },
 ];
 
 export type SkillGroup = {
