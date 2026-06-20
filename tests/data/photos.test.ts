@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { featuredPhotos, photosByYear, type Photo } from "./photos";
+import { featuredPhotos, photosByYear, type Photo } from "@/data/photos";
 
 function makePhoto(overrides: Partial<Photo> & Pick<Photo, "id" | "year">): Photo {
   return {

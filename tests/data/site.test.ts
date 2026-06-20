@@ -5,7 +5,7 @@ import {
   generateProjects,
   projects,
   site,
-} from "./site";
+} from "@/data/site";
 
 describe("derived project lists", () => {
   it("generateProjects contains only Generate NU projects", () => {

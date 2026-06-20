@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { Button } from "./Button";
-import { ExternalLink } from "./ExternalLink";
+import { Button } from "@/components/Button";
+import { ExternalLink } from "@/components/ExternalLink";
 
 describe("ExternalLink", () => {
   it("always sets the safe new-tab attributes", () => {

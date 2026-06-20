@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { getPhotoCdnHostname, getPhotoUrl } from "./photo-url";
+import { getPhotoCdnHostname, getPhotoUrl } from "@/lib/photo-url";
 
 const ENV_KEY = "NEXT_PUBLIC_PHOTO_CDN_URL";
 

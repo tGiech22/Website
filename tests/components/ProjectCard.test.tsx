@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import type { Project } from "@/data/site";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "@/components/ProjectCard";
 
 const base: Project = {
   slug: "demo",
